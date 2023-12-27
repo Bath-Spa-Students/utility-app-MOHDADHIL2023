@@ -40,6 +40,7 @@ MENU = {
 'F2': {'NAME': 'PROTEIN BAR', 'price': 25.50}
 }
 
+#enter the code for which items you want.
 selection=input("ENTER THE CODE OF THE ITEMS FOR PURCHASE: ")
 
 if selection == "A1":
@@ -67,7 +68,7 @@ elif selection == "F1":
 elif selection == "F2":
     print("You selected F2.")
 
-#select the item from the menu
+#select the item from the menu.
 if selection in MENU:
 
     ITEM = MENU[selection]
