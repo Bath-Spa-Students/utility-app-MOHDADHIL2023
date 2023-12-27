@@ -1,5 +1,6 @@
 #Vending Machine
 
+#introduction to my vending machine
 print('''___𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝑻𝑯𝑬 𝑴𝑶𝑯𝑫 𝑨𝑫𝑰𝑳 𝑯𝑶𝑺𝑺𝑨𝑰𝑵 𝑽𝑬𝑵𝑫𝑰𝑵𝑮 𝑴𝑨𝑪𝑯𝑰𝑵𝑬___''')
 
 print("___𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝑻𝑯𝑬 𝑴𝑬𝑵𝑼!!___")
@@ -7,6 +8,7 @@ print("___𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝑻𝑯𝑬 𝑴𝑬𝑵𝑼!!_
 print("___𝑯𝑶𝑾 𝑪𝑨𝑵 𝑰 𝑯𝑬𝑳𝑷 𝒀𝑶𝑼___")
 
 
+#items of vending machine
 print("______________𝓜𝓔𝓝𝓤 𝓑𝓞𝓞𝓚________________")
 print("____𝓓𝓡𝓘𝓝𝓚𝓢_______________________________")
 print("A1.                COKE              2.50DHS")
@@ -65,16 +67,21 @@ elif selection == "F1":
 elif selection == "F2":
     print("You selected F2.")
 
+#select the item from the menu
 if selection in MENU:
 
     ITEM = MENU[selection]
 
     PRICE = ITEM['price']
 
+#insert the money
 MONEY= float(input("ENTER THE MONEY YOU WANT TO INSERT: "))
 
+#money to the customers
 CHANGE= MONEY-PRICE
 
 print(f"Dispensing {ITEM['NAME']}")
 
 print(f"CHANGE: {CHANGE:.2f}")
+
+print("thank you and have a nice day")
